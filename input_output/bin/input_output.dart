@@ -1,23 +1,44 @@
 // import 'dart:io';
 
 void main(List<String> arguments) {
-  // PEMBUKTIAN ===============================
-  double num2 = 12.123;
-  //bool negatif = num2 < 0; // dengan operator
-  bool negatif = num2.isNegative; // dengan properti
-  print(negatif);
+  // NULL assertions operator =================================
+  String str = '123';
+  int? num = int.tryParse(str);
+  int result = num! + 5; // dipakai kalau yakin num-nya bukan null
+  print(result);
 
-  // PEMBULATAN =======================================
-  double num = 12.123;
-  //String str4 = num.toStringAsFixed(2); //parsing dari string dan pembulatan ke double tergantung desimalnya, jika >=5 pembulatan keatas,
-  //int str4 = num.ceil();  // pembulatan integer, pembulatan keatas
-  //int str4 = num.round(); // pembulatan integer, pendekatan decimal jika >=5 dibulatkan keatas, sebaliknya
-  //int str4 = num.floor();   // pembulatan integer, pembulatan kebawah
-  //double str4 = num.roundToDouble(); // pembulatan double,
-  // double str4 = num.floorToDouble(); // pembulatan double,
-  // double str4 = num.ceilToDouble(); // pembulatan double,
-  int str4 = num.toInt(); // parse ke integer
-  print(str4);
+  // IF-NULL operator
+  // String str2 = 'abc'; 
+  String str2 = '4'; 
+  int? num2 = int.tryParse(str2);
+  // int result2 = (num?? 1) + 5; // jika nilai num-nya null, maka nilai 1 akan dipakai sebagai elsenya
+  int result2 = (num2?? 1) + 5; // jika nilai num-nya benar, maka nilai tersebut yang akan dieksekusi
+  print(result2);
+
+  // IF-NULL assignment operator
+  String str3 = '123';
+  int? num3 = int.tryParse(str3);
+  num3 ??= 1; // bedanya cuma ini di assign dulu, logikanya sama dengan yang diatas
+  int result3 = num3 + 5; 
+  print(result3);
+
+  // // PEMBUKTIAN ===============================
+  // double num2 = 12.123;
+  // //bool negatif = num2 < 0; // dengan operator
+  // bool negatif = num2.isNegative; // dengan properti
+  // print(negatif);
+
+  // // PEMBULATAN =======================================
+  // double num = 12.123;
+  // //String str4 = num.toStringAsFixed(2); //parsing dari string dan pembulatan ke double tergantung desimalnya, jika >=5 pembulatan keatas,
+  // //int str4 = num.ceil();  // pembulatan integer, pembulatan keatas
+  // //int str4 = num.round(); // pembulatan integer, pendekatan decimal jika >=5 dibulatkan keatas, sebaliknya
+  // //int str4 = num.floor();   // pembulatan integer, pembulatan kebawah
+  // //double str4 = num.roundToDouble(); // pembulatan double,
+  // // double str4 = num.floorToDouble(); // pembulatan double,
+  // // double str4 = num.ceilToDouble(); // pembulatan double,
+  // int str4 = num.toInt(); // parse ke integer
+  // print(str4);
 
   // // PARSING =============================================
   // // STRING TO ANGKA
