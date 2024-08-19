@@ -1,26 +1,64 @@
-// import 'dart:io';
+import 'dart:io';
 
 void main(List<String> arguments) {
-  // NULL assertions operator =================================
-  String str = '123';
-  int? num = int.tryParse(str);
-  int result = num! + 5; // dipakai kalau yakin num-nya bukan null
-  print(result);
+  // MATERI IF-ELSE IF-ELSE statement=================================
+  String input = stdin.readLineSync() ?? 'no input';
+  int num = int.tryParse(input) ?? 0;
 
-  // IF-NULL operator
-  // String str2 = 'abc'; 
-  String str2 = '4'; 
-  int? num2 = int.tryParse(str2);
-  // int result2 = (num?? 1) + 5; // jika nilai num-nya null, maka nilai 1 akan dipakai sebagai elsenya
-  int result2 = (num2?? 1) + 5; // jika nilai num-nya benar, maka nilai tersebut yang akan dieksekusi
-  print(result2);
+  int res = (num >= 0 ? num : num * -1);
+  print(res);
+// ---------------------------------------
+  // print(num >= 0 ? num : num * -1);
+// ---------------------------------------
+  // int tem = int.tryParse(input) ?? 0;
+  
+  // if (tem <= 0) {
+  //   print('forzen');
+  // } else if (tem > 0 && tem <= 100) {
+  //   print('liquid');
+  // } else {
+  //   print('steam');
+  // }
+  // ------------------------------------------
+  // if (num > 0) {
+  //   print('positif');
+  // } else if (num < 0) {
+  //   print('negatif');
+  // } else {
+  //   print('zero');
+  // }
+  // ---------------------------------------------
+  // if (num == 0) {
+  //   print('zero');
+  // }else{
+  //   print('not zero')
+  // }
+  // ----------------------------------------------
+  // if (num < 0) {
+  //   num += 1;
+  // }
+  // print(num);
 
-  // IF-NULL assignment operator
-  String str3 = '123';
-  int? num3 = int.tryParse(str3);
-  num3 ??= 1; // bedanya cuma ini di assign dulu, logikanya sama dengan yang diatas
-  int result3 = num3 + 5; 
-  print(result3);
+  // // NULL assertions operator =================================
+  // String str = '123';
+  // int? num = int.tryParse(str);
+  // int result = num! + 5; // dipakai kalau yakin num-nya bukan null
+  // print(result);
+
+  // // IF-NULL operator
+  // // String str2 = 'abc';
+  // String str2 = '4';
+  // int? num2 = int.tryParse(str2);
+  // // int result2 = (num?? 1) + 5; // jika nilai num-nya null, maka nilai 1 akan dipakai sebagai elsenya
+  // int result2 = (num2?? 1) + 5; // jika nilai num-nya benar, maka nilai tersebut yang akan dieksekusi
+  // print(result2);
+
+  // // IF-NULL assignment operator
+  // String str3 = '123';
+  // int? num3 = int.tryParse(str3);
+  // num3 ??= 1; // bedanya cuma ini di assign dulu, logikanya sama dengan yang diatas
+  // int result3 = num3 + 5;
+  // print(result3);
 
   // // PEMBUKTIAN ===============================
   // double num2 = 12.123;
