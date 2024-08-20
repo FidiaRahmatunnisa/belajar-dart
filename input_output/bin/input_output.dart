@@ -1,21 +1,66 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  // PEMBULATAN STRING
+  
+
+  // MATERI PERULANGAN ================================
+  // DO-WHILE -----------------------------------------
+  // Decrement
+  // String? input = stdin.readLineSync() ?? '';
+  // int limit = int.tryParse(input) ?? 0;
+  // int number = 10;
+  // do {
+  //   print(number);
+  //   number -= 1;
+  // } while (number > limit);
+
+  // // Increment -----------------------------------------
+  // String? input = stdin.readLineSync() ?? '';
+  // int limit = int.tryParse(input) ?? 0;
+  // int number = 0;
+  //   do {
+  //   print(number);
+  //   number += 1;
+  // } while (number < limit);
+  
+  // WHILE =====================================================
+  // String? input = stdin.readLineSync() ?? '';
+  // int number = int.tryParse(input) ?? 0;
+  // while (number >= 0) {
+  //   input = stdin.readLineSync() ?? '';
+  //   number = int.tryParse(input) ?? 0;
+  // }
+  // print('input terakhir adalah $number');
+
+  // FOR
+  // ------------------------------------------------------------
+  // String? input = stdin.readLineSync() ?? '';
+  // int limit = int.tryParse(input)?? 0;
+  // for (int counter = 0; counter < limit; counter += 1)
+  // {
+  //   print('hello world');
+  // }
+  // ------------------------------------------------------------
+  // for (int counter = 0; counter < 5; counter += 1)
+  // {
+  //   print('hello world');
+  // }
+
+  // // PEMBULATAN STRING
   // double num = 4.123;
   // String s = num.toStringAsFixed(2);
   // print(s);
 
-  // REPLACE =========================================
+  // // REPLACE =========================================
   // String s = 'hello my name is jayon, call me jayon';
   // s = s.replaceAll('jayon', 'slayaa');
   // print(s);
 
-  // String s = 'hello my name is jayon, call me jayon';
-  // s = s.replaceAll('o', 'a');
-  // print(s);
+  // String s2 = 'hello my name is jayon, call me jayon';
+  // s2 = s2.replaceAll('o', 'a');
+  // print(s2);
 
-  // MENGHAPUS SPASI PADA SISI KANAN ==================
+  // // MENGHAPUS SPASI PADA SISI KANAN ==================
   // String s = '    hello   ';
   // print(s);
   // s = s.trim();
@@ -31,37 +76,37 @@ void main(List<String> arguments) {
   // s3 = s3.trimRight();
   // print(s3);
 
-  // WAJIB TERISI ======================
-  // --- kiri
+  // // WAJIB TERISI ======================
+  // // --- kiri
   // int num = 7;
   // String s = num.toString();
   // s = s.padLeft(4, '0');
   // print(s);
 
-  // -- kanan
-  // int num = 7;
-  // String s = num.toString();
-  // s = s.padRight(3, 'A');
-  // print(s);
+  // // -- kanan
+  // int num2 = 7;
+  // String s2 = num2.toString();
+  // s2 = s2.padRight(3, 'A');
+  // print(s2);
 
-  // CEK ============================
+  // // CEK ============================
   // String s = 'hello fidia';
   // bool b = s.contains('fid');
   // print(b);
 
-  // String s = 'helo fidia';
-  // bool b = s.startsWith('he');
-  // print(b);
+  // String s2 = 'helo fidia';
+  // bool b2 = s2.startsWith('he');
+  // print(b2);
 
-  // String s = 'helo fidia';
-  // bool b = s.endsWith('lo');
-  // print(b);
+  // String s3 = 'helo fidia';
+  // bool b3 = s3.endsWith('lo');
+  // print(b3);
 
   // // LENGTH =====================
   // String s = 'hello fidia';
   // print(s.length);
 
-  // SUBSTRING =========================
+  // // SUBSTRING =========================
   // String s = 'hello';
   // s = s.substring(0, 4);
   // print(s);
@@ -74,30 +119,32 @@ void main(List<String> arguments) {
   // bool b = s.isNotEmpty;
   // print(b);
 
-  // String s = '';
-  // print(s.isNotEmpty);
+  // String s2 = '';
+  // print(s2.isNotEmpty);
 
-  // String s = '';
-  // bool b = s.isEmpty;
-  // print(s);
+  // String s3 = '';
+  // bool b3 = s3.isEmpty;
+  // print(b3);
 
-  // Lower-Case =============================
+  // // Lower-Case =============================
   // String s = 'hello';
   // s = s.toLowerCase();
   // print(s);
 
-  // Upper-Case ============================
-  // String s = 'hello';
-  // s = s.toUpperCase();
-  // print(s);
+  // // Upper-Case ============================
+  // String s2 = 'hello';
+  // s2 = s2.toUpperCase();
+  // print(s2);
 
-  //CHAT CODES ============================================
+  // // CHAT CODES ============================================
   // String s = 'hello' + String.fromCharCode(128125);
-  // String s = 'hello' + String.fromCharCode(111);
-  // String s = 'hello ${String.fromCharCode(128125)}';
+  // String s2 = 'hello' + String.fromCharCode(111);
+  // String s3 = 'hello ${String.fromCharCode(128125)}';
   // print(s);
+  // print(s2);
+  // print(s3);
 
-  // CONCANATE =============================================
+  // // CONCANATE =============================================
   // int num = 10;
   // String s6 = "the area of my home" + num.toString();
   // print(s6);
@@ -134,7 +181,7 @@ void main(List<String> arguments) {
   // };
   // print(output);
 
-  // MATERI SWITCH statement ===========================
+  // // MATERI SWITCH statement ===========================
   // String input = stdin.readLineSync() ?? 'no input';
   // int num = int.tryParse(input) ?? 0;
   // switch (num) {
@@ -148,15 +195,16 @@ void main(List<String> arguments) {
   //     print('other number');
   // }
 
-// // MATERI IF-ELSE IF-ELSE statement=================================
-//   String input = stdin.readLineSync() ?? 'no input';
-//   int num = int.tryParse(input) ?? 0;
+// MATERI IF-ELSE IF-ELSE statement=================================
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
 
-//   int res = (num >= 0 ? num : num * -1);
-//   print(res);
+  // int res = (num >= 0 ? num : num * -1);
+  // print(res);
 // ---------------------------------------
   // print(num >= 0 ? num : num * -1);
 // ---------------------------------------
+  // String input = stdin.readLineSync() ?? 'no input';
   // int tem = int.tryParse(input) ?? 0;
 
   // if (tem <= 0) {
@@ -167,6 +215,8 @@ void main(List<String> arguments) {
   //   print('steam');
   // }
   // ------------------------------------------
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
   // if (num > 0) {
   //   print('positif');
   // } else if (num < 0) {
@@ -175,12 +225,16 @@ void main(List<String> arguments) {
   //   print('zero');
   // }
   // ---------------------------------------------
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
   // if (num == 0) {
   //   print('zero');
-  // }else{
-  //   print('not zero')
+  // } else {
+  //   print('not zero');
   // }
   // ----------------------------------------------
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
   // if (num < 0) {
   //   num += 1;
   // }
@@ -207,7 +261,7 @@ void main(List<String> arguments) {
   // int result3 = num3 + 5;
   // print(result3);
 
-  // // PEMBUKTIAN ===============================
+  // PEMBUKTIAN ===============================
   // double num2 = 12.123;
   // //bool negatif = num2 < 0; // dengan operator
   // bool negatif = num2.isNegative; // dengan properti
@@ -234,16 +288,16 @@ void main(List<String> arguments) {
 
   // String str2 = 'abcd';
   // // int number2 = int.parse(str2); // kalau menggunakan parse ini akan error, jadi
-  // int? number2 = int.tryParse(
-  //     str2); // gunakan tryParse, tipe datanya jadi nullable, dan jika hasilnya tidak sesuai akan dikembalikan output null
+  // int? number2 = int.tryParse(str2); // gunakan tryParse, tipe datanya jadi nullable, dan jika hasilnya tidak sesuai akan dikembalikan output null
   // print(number2);
   // /*berlaku untuk double juga*/
 
   // // ANGKA TO STRING
+  // int number = 50;
   // String str3 = number.toString();
   // print(str3);
 
-  // EXPRESSION =====================================
+  // // EXPRESSION =====================================
   // 5; // expresion simple ->literal
   // int num = 5; // expression simple -> simbolik
   // print(num);
@@ -252,9 +306,11 @@ void main(List<String> arguments) {
   // //MATERI OPERATOR LOGIKA ====================================
   // bool result;
   // result = (9 != 9) || (2<5) || (9>10); // true
-  // result = (9 != 9) || (2<5) && (9>10); // false
-  // result = (9 != 9) || ((2<5) && (9<10)); // false
+  // bool result2 = (9 != 9) || (2<5) && (9>10); // false
+  // bool result3 = (9 != 9) || ((2<5) && (9<10)); // false
   // print(result);
+  // print(result2);
+  // print(result3);
 
   //MATERI OPERATOR MATEMATIKA ===========================================
   // cara lainnya
