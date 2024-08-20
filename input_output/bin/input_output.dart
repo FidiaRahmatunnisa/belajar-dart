@@ -1,17 +1,44 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  // MATERI IF-ELSE IF-ELSE statement=================================
+  // MATEERI SWITCH expression
   String input = stdin.readLineSync() ?? 'no input';
   int num = int.tryParse(input) ?? 0;
+  String output;
 
-  int res = (num >= 0 ? num : num * -1);
-  print(res);
+  output = switch (num) {
+    1 => 'satu',
+    2 => 'dua',
+    3 => 'tiga',
+    _ => 'other number'
+  };
+  print(output);
+
+  // MATERI SWITCH statement
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
+  // switch (num) {
+  //   case 1:
+  //     print('satu');
+  //     break;
+  //   case 2:
+  //   case 3:
+  //     print('dua');
+  //   default:
+  //     print('other number');
+  // }
+
+// // MATERI IF-ELSE IF-ELSE statement=================================
+//   String input = stdin.readLineSync() ?? 'no input';
+//   int num = int.tryParse(input) ?? 0;
+
+//   int res = (num >= 0 ? num : num * -1);
+//   print(res);
 // ---------------------------------------
   // print(num >= 0 ? num : num * -1);
 // ---------------------------------------
   // int tem = int.tryParse(input) ?? 0;
-  
+
   // if (tem <= 0) {
   //   print('forzen');
   // } else if (tem > 0 && tem <= 100) {
