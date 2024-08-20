@@ -1,20 +1,140 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  // MATEERI SWITCH expression
-  String input = stdin.readLineSync() ?? 'no input';
-  int num = int.tryParse(input) ?? 0;
-  String output;
+  // PEMBULATAN STRING
+  // double num = 4.123;
+  // String s = num.toStringAsFixed(2);
+  // print(s);
 
-  output = switch (num) {
-    1 => 'satu',
-    2 => 'dua',
-    3 => 'tiga',
-    _ => 'other number'
-  };
-  print(output);
+  // REPLACE =========================================
+  // String s = 'hello my name is jayon, call me jayon';
+  // s = s.replaceAll('jayon', 'slayaa');
+  // print(s);
 
-  // MATERI SWITCH statement
+  // String s = 'hello my name is jayon, call me jayon';
+  // s = s.replaceAll('o', 'a');
+  // print(s);
+
+  // MENGHAPUS SPASI PADA SISI KANAN ==================
+  // String s = '    hello   ';
+  // print(s);
+  // s = s.trim();
+  // print(s);
+
+  // String s2 = '    hello   ';
+  // print(s2);
+  // s2 = s2.trimLeft();
+  // print(s2);
+
+  // String s3 = '    hello   ';
+  // print(s3);
+  // s3 = s3.trimRight();
+  // print(s3);
+
+  // WAJIB TERISI ======================
+  // --- kiri
+  // int num = 7;
+  // String s = num.toString();
+  // s = s.padLeft(4, '0');
+  // print(s);
+
+  // -- kanan
+  // int num = 7;
+  // String s = num.toString();
+  // s = s.padRight(3, 'A');
+  // print(s);
+
+  // CEK ============================
+  // String s = 'hello fidia';
+  // bool b = s.contains('fid');
+  // print(b);
+
+  // String s = 'helo fidia';
+  // bool b = s.startsWith('he');
+  // print(b);
+
+  // String s = 'helo fidia';
+  // bool b = s.endsWith('lo');
+  // print(b);
+
+  // // LENGTH =====================
+  // String s = 'hello fidia';
+  // print(s.length);
+
+  // SUBSTRING =========================
+  // String s = 'hello';
+  // s = s.substring(0, 4);
+  // print(s);
+
+  // String s = 'my name is fidia';
+  // List<String> s2 = s.split(' ');
+  // print(s2);
+
+  // String s = '';
+  // bool b = s.isNotEmpty;
+  // print(b);
+
+  // String s = '';
+  // print(s.isNotEmpty);
+
+  // String s = '';
+  // bool b = s.isEmpty;
+  // print(s);
+
+  // Lower-Case =============================
+  // String s = 'hello';
+  // s = s.toLowerCase();
+  // print(s);
+
+  // Upper-Case ============================
+  // String s = 'hello';
+  // s = s.toUpperCase();
+  // print(s);
+
+  //CHAT CODES ============================================
+  // String s = 'hello' + String.fromCharCode(128125);
+  // String s = 'hello' + String.fromCharCode(111);
+  // String s = 'hello ${String.fromCharCode(128125)}';
+  // print(s);
+
+  // CONCANATE =============================================
+  // int num = 10;
+  // String s6 = "the area of my home" + num.toString();
+  // print(s6);
+
+  // String s7 = "the area of my home $num meters";
+  // print(s7);
+
+  // String s8 = "the area of my home ${num +10} meters";
+  // print(s8);
+
+  // // STRING
+  // String s = "this is \'string\'";
+  // print(s);
+
+  // String s2 = "this is \tstring\t";
+  // print(s2);
+
+  // String s3 = "this is \"string\"";
+  // print(s3);
+
+  // String s4 = "this is \nstring\n";
+  // print(s4);
+
+  // // MATEERI SWITCH expression ==========================
+  // String input = stdin.readLineSync() ?? 'no input';
+  // int num = int.tryParse(input) ?? 0;
+  // String output;
+
+  // output = switch (num) {
+  //   1 => 'satu',
+  //   2 => 'dua',
+  //   3 => 'tiga',
+  //   _ => 'other number'
+  // };
+  // print(output);
+
+  // MATERI SWITCH statement ===========================
   // String input = stdin.readLineSync() ?? 'no input';
   // int num = int.tryParse(input) ?? 0;
   // switch (num) {
