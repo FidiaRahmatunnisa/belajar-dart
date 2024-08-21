@@ -1,32 +1,103 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  // main function, tempat menjalankan kode
-  int n1 = 2;
-  int n2 = 3;
+  // MATERI ANONYMOUS FUNCTION
+  var num1 = 25;
+  var num2 = 10;
 
-  // int res;
-  // res = add(2, 3);
-  // tampil(2, 3, res);
-
-  // tampil(n1, n2, add(n1, n2)); // cara singkat
-  tampil(n1, n2); // cara singkat lainnya
+  // var res = doMath(num1, num2, (p0, p1) => add(num1, num2));
+  // var res = doMath(num1, num2, (p0, p1) => p0*p1);
+  // var res = doMath(num1, num2, (n1,n2) => n1-n2);
+  var res = doMath(num1, num2, (int n1,int n2) => n1-n2);
+  tampil(res);
 }
 
-// MATERI FUNGSI =====================================
-// mengembalikan nilai ------------------------------
-int add(int num1, int num2) {
-  int res = num1 + num2;
-  return res;
-}
+int add(int num1, int num2) => num1 + num2;
+void tampil(int num) => print('the number is $num');
 
-// tanpa pengembalian nilai ---------------------------
-// void tampil(int num1, int num2, int res) {
-void tampil(int num1, int num2) {
-  // int res = num1 + num2;
-  // print("$num1 + $num2 = $res");
-  print("$num1 + $num2 = ${add(num1, num2)}");  // cara singkat
-}
+int doMath(int num1, int num2, int Function(int n1, int n2) operator) =>
+    operator(num1, num2);
+int Function(int, int) getMath() => add;
+
+
+//   // LAMBDA EXPRESSION atau PEPERO EXPRESSION atau ARROW sintaks
+//   // DAN MATERI FUNCTION ASSIGN
+
+//   var num1 = 10;
+//   var num2 = 20;
+
+//   // FUNCTION yang di ASSIGN di VARIABEL
+//   // Function fun1 = add;
+//   // Function fun1 = tampil;
+//   int Function(int, int) fun1 = add;
+//   int Function(int, int) fun2 = substract;
+//   void Function(int) fun3 = tampil;
+
+//   int Function(int, int) fun4 = getMath();
+
+//   // var res = fun1(num1, num2);
+//   // var res = mathOpe(num1, num2, add);
+//   // var res = mathOpe(num1, num2, fun4);
+//   var res = mathOpe(num1, num2, getMath());
+
+//   tampil(res);
+// }
+
+// // FUNCTION yang di assign dalam FUNCTION
+// int mathOpe(int num1, int num2, int Function(int, int) ope) {
+//   return ope(num1, num2);
+// }
+
+// int Function(int, int) getMath() {
+//   return add;
+// }
+
+// int add(int num1, int num2) => num1 + num2;
+// int substract(int num1, int num2) {
+//   return num1 - num2;
+// }
+
+// void tampil(int num) => print("the number is $num");
+
+//   // OPTIONAL PARAMETER
+//   say('fidia', 'hello','jayo');
+//   // say('fidia', 'hello', to: 'jayo', appname : 'wa');
+// }
+
+// void say(String from, String message, [ String? to, String appname = 'tele']) {
+// // void say(String from, String message, [String? to, String appname = 'whatsApp' --> default, jika tidak diisi parameternya]) {
+// // void say(String from, String message, [String? to, String? appname] --> yang dalam kurung siku namanya parameter optional, kalau dipanggil, boleh diisi, boleh nggk  ) {
+//   print(
+//       '$from says $message${to != null ? 'to $to' : ''} ${appname != null ? 'on $appname' : ''}');
+//       // '$from say $message $to $appname');
+// }
+
+// // MATERI FUNGSI =====================================
+//   // main function, tempat menjalankan kode
+//   int n1 = 2;
+//   int n2 = 3;
+
+//   // int res;
+//   // res = add(2, 3);
+//   // tampil(2, 3, res);
+
+//   // tampil(n1, n2, add(n1, n2)); // cara singkat
+//   tampil(n1, n2); // cara singkat lainnya
+// }
+
+// // mengembalikan nilai ------------------------------
+// int add(int num1, int num2) {
+//   int res = num1 + num2;
+//   return res;
+// }
+
+// // tanpa pengembalian nilai ---------------------------
+// // void tampil(int num1, int num2, int res) {
+// void tampil(int num1, int num2) {
+//   // int res = num1 + num2;
+//   // print("$num1 + $num2 = $res");
+//   print("$num1 + $num2 = ${add(num1, num2)}");  // cara singkat
+// }
 
 // MATERI PERULANGAN ================================
 // DO-WHILE -----------------------------------------
