@@ -1,24 +1,121 @@
 import 'dart:io';
 
-void main(List<String> arguments) {
-  // MATERI ANONYMOUS FUNCTION
-  var num1 = 25;
-  var num2 = 10;
+void main(List<String> arguments) {}
 
-  // var res = doMath(num1, num2, (p0, p1) => add(num1, num2));
-  // var res = doMath(num1, num2, (p0, p1) => p0*p1);
-  // var res = doMath(num1, num2, (n1,n2) => n1-n2);
-  var res = doMath(num1, num2, (int n1,int n2) => n1-n2);
-  tampil(res);
-}
 
-int add(int num1, int num2) => num1 + num2;
-void tampil(int num) => print('the number is $num');
+//   // MATERI LIST =================================
 
-int doMath(int num1, int num2, int Function(int n1, int n2) operator) =>
-    operator(num1, num2);
-int Function(int, int) getMath() => add;
+//   List<int> num = [11, 22, 33, 44, 55, 44, 22, 11, 55];
+//   List<int> num2 = [1, 2, 3, 4, 5];
+//   // // sisip satu value ke list  -------------
+//   // num.add(100);
 
+//   // // gabung 2 list ------------------------
+//   // num.addAll(num2);
+
+//   // // insert (posisi index, value); --------------------------
+//   // num.insert(2, 200);
+
+//   // // insertAll ----------------------
+//   // num.insertAll(4, num2);
+
+//   // // remove value dalam list --> cuma menghilangkan value pertama yang ditemukan
+//   // num.remove(11);
+
+//   // // removeLast --> value terakhir dihapus
+//   // num.removeLast();
+
+//   // // removeAt -> menghapus index keberapa
+//   // num.removeAt(3);
+
+//   // // removeRange(index dari (index awal dihapus)), index ke(index ke-nya tidak termasuk untuk dihapus))
+//   // num.removeRange(0, 2);
+
+//   // // removeWhere --> menghapus semua value yang diinginkan
+//   // // num.removeWhere((element) => element == 44);
+//   // num.removeWhere((element) => element %2 == 0);
+
+//   // // melakukan pengecekan value dalam sebuah list, apakah ada atau tidak
+//   // if (num.contains(44)) {
+//   //   print('ada');
+//   // } else {
+//   //   print('tidak ada');
+//   // }
+
+//   // // subList --> mengambil nilai dari list
+//   // List<int> num3 = num.sublist(3, 5);
+//   // num3.clear();
+
+//   // // sorting --> mengurutkan data
+//   // num.sort();
+
+//   // // every -> untuk menguji apakah data dilist sesuai dengan batasan yang ditanya
+//   // if (num.every((element) => element % 2 == 0)) {
+//   //   print('benar');
+//   // } else {
+//   //   print('salah');
+//   // }
+
+//   // // empty
+//   // if (num.isNotEmpty) {
+//   //   print('list tersebut ada isinya');
+//   // } else {
+//   //   print('list tersebut kosong');
+//   // }
+
+//   // // set -> mengambil nilai satu buah dalam list, walau nilainya berulang-ulang terus, tapi nilai yang diambil cuma 1, sehingga diketahui berapa macam data-nya
+//   // Set<int> unik = num.toSet();
+
+//   // unik.forEach((element) {
+//   //   print(element);
+//   // });
+
+//   // print(num[0]);
+//   // print(num[3]);
+//   // print(num.length);
+
+//   // for (int i = 0; i < num.length; i += 1) {
+//   //   print(num[i]);
+//   // }
+
+//   // // FOR-IN --------------------------------
+//   // for (int element in num) {
+//   //   print(element);
+//   // }
+
+//   // FOREACH
+//   // num.forEach((element) {
+//   //   print(element);
+//   // });
+// }
+
+// //   num.forEach((number) {
+// //     tampil(number);
+// //   });
+// // }
+
+// // void tampil(int num) {
+// //   print(num);
+// // }
+
+
+//   // MATERI ANONYMOUS FUNCTION
+//   var num1 = 25;
+//   var num2 = 10;
+
+//   // var res = doMath(num1, num2, (p0, p1) => add(num1, num2));
+//   // var res = doMath(num1, num2, (p0, p1) => p0*p1);
+//   // var res = doMath(num1, num2, (n1,n2) => n1-n2);
+//   var res = doMath(num1, num2, (int n1,int n2) => n1-n2);
+//   tampil(res);
+// }
+
+// int add(int num1, int num2) => num1 + num2;
+// void tampil(int num) => print('the number is $num');
+
+// int doMath(int num1, int num2, int Function(int n1, int n2) operator) =>
+//     operator(num1, num2);
+// int Function(int, int) getMath() => add;
 
 //   // LAMBDA EXPRESSION atau PEPERO EXPRESSION atau ARROW sintaks
 //   // DAN MATERI FUNCTION ASSIGN
