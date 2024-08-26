@@ -1,102 +1,101 @@
 import 'dart:io';
 
-void main(List<String> arguments) {}
-
+void main(List<String> arguments) {
 
 //   // MATERI LIST =================================
 
-//   List<int> num = [11, 22, 33, 44, 55, 44, 22, 11, 55];
-//   List<int> num2 = [1, 2, 3, 4, 5];
-//   // // sisip satu value ke list  -------------
-//   // num.add(100);
+  List<int> num = [11, 22, 33, 44, 55, 44, 22, 11, 55];
+  List<int> num2 = [1, 2, 3, 4, 5];
 
-//   // // gabung 2 list ------------------------
-//   // num.addAll(num2);
+  // // sisip satu value ke list  -------------
+  // num.add(100);
 
-//   // // insert (posisi index, value); --------------------------
-//   // num.insert(2, 200);
+  // // gabung 2 list ------------------------
+  // num.addAll(num2);
 
-//   // // insertAll ----------------------
-//   // num.insertAll(4, num2);
+  // // insert (posisi index, value); --------------------------
+  // num.insert(2, 200);
 
-//   // // remove value dalam list --> cuma menghilangkan value pertama yang ditemukan
-//   // num.remove(11);
+  // // insertAll ----------------------
+  // num.insertAll(4, num2);
 
-//   // // removeLast --> value terakhir dihapus
-//   // num.removeLast();
+  // // remove value dalam list --> cuma menghilangkan value pertama yang ditemukan
+  // num.remove(11);
 
-//   // // removeAt -> menghapus index keberapa
-//   // num.removeAt(3);
+  // // removeLast --> value terakhir dihapus
+  // num.removeLast();
 
-//   // // removeRange(index dari (index awal dihapus)), index ke(index ke-nya tidak termasuk untuk dihapus))
-//   // num.removeRange(0, 2);
+  // // removeAt -> menghapus index keberapa
+  // num.removeAt(3);
 
-//   // // removeWhere --> menghapus semua value yang diinginkan
-//   // // num.removeWhere((element) => element == 44);
-//   // num.removeWhere((element) => element %2 == 0);
+  // // removeRange(index dari (index awal dihapus)), index ke(index ke-nya tidak termasuk untuk dihapus))
+  // num.removeRange(0, 2);
 
-//   // // melakukan pengecekan value dalam sebuah list, apakah ada atau tidak
-//   // if (num.contains(44)) {
-//   //   print('ada');
-//   // } else {
-//   //   print('tidak ada');
-//   // }
+  // // removeWhere --> menghapus semua value yang diinginkan
+  // num.removeWhere((element) => element == 44);
+  // num.removeWhere((element) => element %2 == 0);
 
-//   // // subList --> mengambil nilai dari list
-//   // List<int> num3 = num.sublist(3, 5);
-//   // num3.clear();
+  // // melakukan pengecekan value dalam sebuah list, apakah ada atau tidak
+  // if (num.contains(44)) {
+  //   print('ada');
+  // } else {
+  //   print('tidak ada');
+  // }
 
-//   // // sorting --> mengurutkan data
-//   // num.sort();
+  // // subList --> mengambil nilai dari list
+  // List<int> num3 = num.sublist(3, 5);
+  // num3.clear();
 
-//   // // every -> untuk menguji apakah data dilist sesuai dengan batasan yang ditanya
-//   // if (num.every((element) => element % 2 == 0)) {
-//   //   print('benar');
-//   // } else {
-//   //   print('salah');
-//   // }
+  // // sorting --> mengurutkan data
+  // num.sort();
 
-//   // // empty
-//   // if (num.isNotEmpty) {
-//   //   print('list tersebut ada isinya');
-//   // } else {
-//   //   print('list tersebut kosong');
-//   // }
+  // // every -> untuk menguji apakah data dilist sesuai dengan batasan yang ditanya
+  // if (num.every((element) => element % 2 == 0)) {
+  //   print('benar');
+  // } else {
+  //   print('salah');
+  // }
 
-//   // // set -> mengambil nilai satu buah dalam list, walau nilainya berulang-ulang terus, tapi nilai yang diambil cuma 1, sehingga diketahui berapa macam data-nya
-//   // Set<int> unik = num.toSet();
+  // // empty
+  // if (num.isNotEmpty) {
+  //   print('list tersebut ada isinya');
+  // } else {
+  //   print('list tersebut kosong');
+  // }
 
-//   // unik.forEach((element) {
-//   //   print(element);
-//   // });
+  // // set -> mengambil nilai satu buah dalam list, walau nilainya berulang-ulang terus, tapi nilai yang diambil cuma 1, sehingga diketahui berapa macam data-nya
+  Set<int> unik = num.toSet();
 
-//   // print(num[0]);
-//   // print(num[3]);
-//   // print(num.length);
+  unik.forEach((element) {
+    print(element);
+  });
 
-//   // for (int i = 0; i < num.length; i += 1) {
-//   //   print(num[i]);
-//   // }
+  // print(num[0]);
+  // print(num[3]);
+  // print(num.length);
 
-//   // // FOR-IN --------------------------------
-//   // for (int element in num) {
-//   //   print(element);
-//   // }
+  // for (int i = 0; i < num.length; i += 1) {
+  //   print(num[i]);
+  // }
 
-//   // FOREACH
-//   // num.forEach((element) {
-//   //   print(element);
-//   // });
-// }
+  // // FOR-IN --------------------------------
+  // for (int element in num) {
+  //   print(element);
+  // }
 
-// //   num.forEach((number) {
-// //     tampil(number);
-// //   });
-// // }
+  // FOREACH
+  // num.forEach((element) {
+  //   print(element);
+  // });
 
-// // void tampil(int num) {
-// //   print(num);
-// // }
+  // num.forEach((number) {
+  //   tampil(number);
+  // });
+}
+
+void tampil(int num) {
+  print(num);
+}
 
 
 //   // MATERI ANONYMOUS FUNCTION
@@ -120,12 +119,12 @@ void main(List<String> arguments) {}
 //   // LAMBDA EXPRESSION atau PEPERO EXPRESSION atau ARROW sintaks
 //   // DAN MATERI FUNCTION ASSIGN
 
-//   var num1 = 10;
-//   var num2 = 20;
+  // var num1 = 10;
+  // var num2 = 20;
 
-//   // FUNCTION yang di ASSIGN di VARIABEL
-//   // Function fun1 = add;
-//   // Function fun1 = tampil;
+  // FUNCTION yang di ASSIGN di VARIABEL
+  // Function fun1 = add;
+  // Function fun1 = tampil;
 //   int Function(int, int) fun1 = add;
 //   int Function(int, int) fun2 = substract;
 //   void Function(int) fun3 = tampil;
@@ -135,7 +134,7 @@ void main(List<String> arguments) {}
 //   // var res = fun1(num1, num2);
 //   // var res = mathOpe(num1, num2, add);
 //   // var res = mathOpe(num1, num2, fun4);
-//   var res = mathOpe(num1, num2, getMath());
+//   // var res = mathOpe(num1, num2, getMath());
 
 //   tampil(res);
 // }
@@ -170,7 +169,7 @@ void main(List<String> arguments) {}
 // }
 
 // // MATERI FUNGSI =====================================
-//   // main function, tempat menjalankan kode
+// //   // main function, tempat menjalankan kode
 //   int n1 = 2;
 //   int n2 = 3;
 
@@ -182,13 +181,13 @@ void main(List<String> arguments) {}
 //   tampil(n1, n2); // cara singkat lainnya
 // }
 
-// // mengembalikan nilai ------------------------------
+// // // mengembalikan nilai ------------------------------
 // int add(int num1, int num2) {
 //   int res = num1 + num2;
 //   return res;
 // }
 
-// // tanpa pengembalian nilai ---------------------------
+// // // tanpa pengembalian nilai ---------------------------
 // // void tampil(int num1, int num2, int res) {
 // void tampil(int num1, int num2) {
 //   // int res = num1 + num2;
@@ -547,4 +546,5 @@ void main(List<String> arguments) {}
 // print('nama user:');
 // print(input);
 // print('hello fidia');
+
 // }
